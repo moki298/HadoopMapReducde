@@ -2,11 +2,9 @@
 
 ## The instructions for data analysis on hadoop server which supports HadoopStreamingAPI are given below
 
-Go to home directory
-
 Clone this repository first
 
-After cloning is done, run the below command on hadoop cluster by making changing output path
+After cloning is done, run the below command on hadoop cluster by changing output path
 
 hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar -input /data/nyc/nyc-traffic.csv -output /users-cloud-16fs/ballima/output/job1-out/o1 -mapper ~/mapper.py -reducer ~/reducer.py -file ~/{mapper,reducer}.py
  
